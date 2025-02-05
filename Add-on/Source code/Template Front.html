@@ -321,7 +321,7 @@ if (screenKeyboard) {
     if (!isMCh) {
       keyButton.innerText = key;
     } else {
-      keyButton.innerHTML = key;
+      keyButton.innerHTML = key.replaceAll(";", "<br>");
     }
     keyButton.classList.add('membtn');
     if (!isMCh && (key === ' ' || key === '　')) {keyButton.classList.add('space')}
